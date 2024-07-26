@@ -1,0 +1,126 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("6381854.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(7px);
+  opacity: 0.7;
+  z-index: -1; /* Ensure the background is behind the content */
+}
+
+.App {
+  text-align: center;
+  margin: 50px auto 0px;
+  margin-top: 28px;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  height: 485px;
+  padding: 13px 15px;
+  /* background: linear-gradient(to right, #8fe0ff, #75b4e3); */
+  background: linear-gradient(115deg, #ffffff, #d4dfed);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+
+}
+
+.search-engine {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.search-engine input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 2px 15px;
+  font-size: 16px;
+  outline: none;
+  background-color: #005B7C;
+  color: #fff;
+}
+.search-engine input::placeholder {
+  color: white; /* Change this to any color you prefer */
+}
+
+.search-engine button {
+  margin-left: 7px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FFC624;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 15px;
+}
+
+.city-name {
+  color: #005B7C;
+  font-size: xx-large;
+}
+
+.loading {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #005B7C;
+}
+
+.date {
+  font-size: 25px;
+  font-weight: 500;
+  color: #005B7C;
+  font-style: italic;
+}
+
+.temp {
+  font-size: 70px;
+  color: #ffc524;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  color: #005B7C;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+  padding: 0px 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #005B7C;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  line-height: 1px;
+}
